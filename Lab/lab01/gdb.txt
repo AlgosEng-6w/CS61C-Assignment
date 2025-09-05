@@ -1,9 +1,9 @@
-1.
-2.
-3.
-4.
-5.
-6.
-7.
-8.
-9.
+1.set args arg1 arg2 arg3
+2.break + 断点位置（函数名、行数、内存地址，条件）
+3.next
+4.step
+5.continue
+6.print + 变量名
+7.display + 变量名
+8.info locals
+9.键入quit
