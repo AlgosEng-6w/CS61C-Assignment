@@ -1,8 +1,8 @@
-UNAME_S := $(shell uname -s)
-CC=gcc
-LD=gcc
-CFLAGS=-ggdb -Wall -std=c99
-LDFLAGS=
+UNAME_S := $(shell uname -s)	# 操作系统名称
+CC=gcc			# C编译器
+LD=gcc			# 链接器
+CFLAGS=-ggdb -Wall -std=c99		# 编译选项
+LDFLAGS=		# 链接选项
 
 ifeq ($(UNAME_S), Darwin)
     MEMCHECK=valgrind --tool=memcheck --leak-check=full --track-origins=yes --dsymutil=yes
